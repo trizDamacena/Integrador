@@ -19,7 +19,7 @@ ul{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, #68B0E4 0px 8px 16px -8px;
 }
 
-ul input{
+ul input {
     width: 300px;
     height: 20px;
     margin-top: 20px;
@@ -28,12 +28,18 @@ ul input{
 
 li{
     margin: 20px;
+
+}
+
+ li a {
+      text-decoration: none;
+      color: #306CAE;
 }
 
 .icon{
     margin: 0px;
-    width: 18px;
-    height: 18px;
+    width: 8px;
+    height: 8px;
 }
 
 figcaption{
@@ -51,11 +57,14 @@ img{
 
 .produtos{
     margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
 }
 
 .cards{
-    width: 100px;
-    height: 150px;
+    width: 250px;
+    height: 400px;
 }
 
 
@@ -65,11 +74,102 @@ img{
 
 .capa{
     margin: 0px;
-    width: 140px;
-    height: 120px;
+    width: 220px;
+    height: 200px;
 }
 
 .titulo{
     height: 20px;
     width: 180px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.artista{
+    padding-top: 15px;
+    margin-bottom: 3px;
+}
+
+.estrelas{
+    display: flex;
+    justify-content: left;
+    height: 10px;
+}
+
+figure{
+    margin: 0px;
+}
+
+.estrela{
+    width: 17px;
+    height: 17px;
+    margin: 0px;
+}
+
+.preco{
+    font-size: larger;
+}
+
+.buttonCard{
+    display: flex;
+    width: 300px;
+    
+}
+
+.compra{
+    width: 180px;
+    height: 30px;
+    padding: 5px;
+    align-items: center ;
+    background-color: white;
+    border-color: #68B0E4;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.compra:hover{
+    background-color: #306CAE;
+    color: white;
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    padding-top: 5px;
+    padding-right: 5px;
+    height: 30px;
+    width: 30px;
+    
+}
+
+.propaganda{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#wicked{
+    display: flex;
+    justify-content: center;
+    width: 1400px;
+    height: 700px;
+}
+
+.ancoras{
+    display: flex;
+    flex-direction: row;
+}
+
+#ancoraCD{
+    width: 900px;
+}
+
+#ancoraVinil{
+    width: 500px;
+    height: 300px;
+}
+
+#ancoraFitas{
+    width: 500px;
+    height: 275px;
 }
