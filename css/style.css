@@ -55,8 +55,14 @@ img{
 
 }
 
-.produtos{
-    margin: 20px;
+.todosProdutos{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.produtos {
+    margin-top: 20px;
+    margin-left: 25px;
     display: flex;
     justify-content: flex-start;
     gap: 45px;
@@ -172,4 +178,21 @@ figure{
 #ancoraFitas{
     width: 500px;
     height: 275px;
+}
+
+/* PRODUTOS */
+.caminho{
+    margin: 25px;
+}
+.miniBanner{
+    width: 1850px;
+    height: 230px;
+    background-color: #68B0E4;
+    margin: 20px;
+    display: flex;
+}
+
+#tituloProdutos{
+    font-size: xx-large;
+    margin: auto;
 }
