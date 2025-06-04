@@ -230,3 +230,11 @@ hr{
 
 /*Produto Especifico*/
 
+.produtoEspecifico{
+    display: flex;
+    align-items: self-start;
+}
+#imagemCD{
+    width: 1500px;
+    height: 800px;
+}
