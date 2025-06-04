@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Poppins", sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 input{
     display: flex;
     justify-content: center;
 }
+
+nav{
+    width: 100%;
+}
 ul{
+    width: 100%;
     display: flex;
     justify-content: right;
     list-style-type: none;
@@ -46,40 +58,44 @@ li{
     height: 8px;
 }
 
-figcaption{
+header{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+figcaption{
+    width: 85%;
 }
 
 img{
     margin: 25px;
-    display: flex;
-    height: 600px;
-    width: 1100px;
+    height: 500px;
+    width: 100%;
 }
 
 main{
     padding: 15px;
 }
-.todosProdutos{
-    margin-top: 90px;
-    margin-left: 20px;
-}
 
 .produtos{
-    margin-top: 30px;
-    margin-left: 25px;
     display: flex;
-    justify-content: flex-start;
-    gap: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .cards{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
     width: 265px;
-    height: 420px;
-    padding-left: 6px;
-    padding-top: 10px;
+    height: 450px;
     border-radius: 8px;
+    border: solid 2px #306CAE;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .cards:hover{
@@ -91,30 +107,38 @@ main{
 
 .capas{
     margin: 0px;
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    align-self: center;
 }
 
 .capa{
     margin: 0px;
-    width: 220px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 .titulo{
-    height: 20px;
-    width: 180px;
-    font-size: medium;
+    align-self: flex-start;
+    height: 40px;
+    font-size: 18px;
+    width: 90%;
     font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .artista{
-    padding-top: 15px;
-    margin-bottom: 3px;
+    width: 75%;
+    height: 20px;
+    margin-bottom: 12px;
 }
 
 .estrelas{
     display: flex;
-    justify-content: left;
-    height: 10px;
+    justify-content: flex-start;
+    height: 20px;
 }
 
 figure{
@@ -128,41 +152,58 @@ figure{
 }
 
 .preco{
-    font-size: larger;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .buttonCard{
     display: flex;
-    width: 350px;
-    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
 }
 
 .compra{
-    width: 180px;
+    width: 60%;
     height: 35px;
-    padding: 5px;
-    align-items: center ;
     background-color: white;
     border-color: #68B0E4;
     border-radius: 4px;
-    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .compra:hover{
-    background-color: #306CAE;
-    color: white;
+    background-color: #90aed0;
     cursor: pointer;
-    
+    transform: scale(1.1);
+    letter-spacing: 1px;
 }
 
 .icon{
     display: flex;
-    padding-top: 0px;
-    padding-right: 5px;
-    margin-left: 3px;
+    align-items: center;
+    justify-content: center;
     height: 35px;
-    width: 35px;
-    
+    width: 15%;
+    background-color: #fff;  
+    border: none;
+    cursor: pointer;
+}
+
+.icon img{
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.2);
 }
 
 hr{
@@ -209,11 +250,17 @@ hr{
     font-size: x-large;
 }
 .miniBanner{
-    width: 1850px;
+    width: 1715px;
     height: 230px;
     background-color: #68B0E4;
     margin: 20px;
     display: flex;
+}
+
+.produtosGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 #tituloProdutos{
@@ -222,19 +269,46 @@ hr{
 }
 
 #anavitoria{
-    width: 1800px;
-    height: 700px;
+    width: 1600px;
+    height: 600px;
     display: flex;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 /*Produto Especifico*/
 
 .produtoEspecifico{
     display: flex;
-    align-items: self-start;
 }
 #imagemCD{
-    width: 1500px;
-    height: 800px;
+    margin-left: 0px;
+    width: 950px;
+    height: 480px;
+}
+
+
+.nomeProduto{
+    width: 600px;
+    height: 50px;
+    font-size: xx-large;
+}
+
+.nomeArtista{
+    font-size: x-large;
+    font-weight: normal;
+    margin-top: 55px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.estrelasDescricao{
+    display: flex;
+    justify-content: left;
+    height: 40px;
+}
+
+.estrelaDescricao{
+    width: 32px;
+    height: 32px;
+    margin: 0px;
 }
