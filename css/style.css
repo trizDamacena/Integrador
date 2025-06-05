@@ -286,10 +286,18 @@ hr{
     height: 480px;
 }
 
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 455px;
+    align-content: center;
+    margin-top: 25px;
+}
 
 .nomeProduto{
     width: 600px;
-    height: 50px;
+    height: 60px;
     font-size: xx-large;
 }
 
@@ -298,17 +306,98 @@ hr{
     font-weight: normal;
     margin-top: 55px;
     margin-left: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .estrelasDescricao{
     display: flex;
     justify-content: left;
     height: 40px;
+    gap: 5px;
 }
 
 .estrelaDescricao{
     width: 32px;
     height: 32px;
     margin: 0px;
+}
+
+figcaption{
+    width: 60%;
+}
+
+.notaAvaliacao{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-size: large;
+}
+
+.valores{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.precoProduto{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.parcelasProduto{
+    display: flex;
+    align-items: center;
+}
+
+#maisInformacoes{
+    font-style: italic;
+    
+}
+
+.botaoDeCompra{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.botaoComprar{
+    height: 55px;
+    width: 250px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    background: none;
+    border: solid 2px #68B0E4;
+    cursor: pointer;
+    
+}
+
+.botaoComprar:hover{
+    transform: scale(1.1);
+}
+
+.botoesExtras{
+    width: 55px;
+    background: none;
+    border-radius: 8px;
+    border: solid 2px #68B0E4;
+    cursor: pointer;
+    
+
+}
+.botoesExtras:hover{
+    transform: scale(1.1);
+}
+
+.botoesExtras i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+#coracao{
+    margin-top: 5px;
 }
