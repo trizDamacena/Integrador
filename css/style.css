@@ -490,7 +490,7 @@ figcaption{
 }
 
 .sobre{
-    margin-top: 160px;
+    margin-top: 120px;
     width: 55%;
     padding: 20px;
     height: auto;
@@ -502,27 +502,112 @@ figcaption{
 
 .avaliacoes{
     margin-top: 90px;
-}
-
-.comentarios{
-    display: flex;
-    flex-direction: column ;
-}
-
-.colecaoComentarios{
     display: flex;
     flex-direction: column;
 }
 
-.comentatio{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+
+.avaliacoes h1{
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 
-.perfilFoto{
+.comentario{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 25px;
+    border: solid 1px #90aed0;
+    width: 65%;
+    padding: 10px;
+}
+
+.fotoPerfil{
+    width: 100px;
     height: 100px;
     border: solid 1px black;
-    width: 100px;
-    border-radius: 80px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.conteudo{
+    margin-left: 20px;
+    width: 90%;
+    align-self: center;
+}
+
+.nomeUser{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.userCometario{
+    font-size: 15px;
+}
+
+.separadorComentario{
+    margin-top: 35px;
+    width: 60%;
+}
+
+/*CARRINHO*/
+
+.caminhoCompra{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.caminhoCompra p{
+    font-size: 20px;
+}
+
+.carrinho{
+    margin-top: 50px;
+}
+
+.unidades{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+
+.prod{
+    margin-right: 550px;
+}
+
+.quant{
+    margin-right: 85px;
+}
+
+.demais{
+    margin-left: 250px;
+}
+.produtoCarrinho{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.infoProduto{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagemCarrinho{
+    width: 8%;
+    height: auto;
+}
+
+.imagemCarrinho img{
+    margin: 0;
+}
+
+.infoProduto p{
+    width: 28%;
+    margin-left: 6px;
 }
