@@ -557,6 +557,7 @@ figcaption{
     margin-top: 55px;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .caminhoCompra p{
@@ -568,26 +569,26 @@ figcaption{
 }
 
 .unidades{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 20px;
 
 }
 
 
 .prod{
-    margin-right: 550px;
+    margin-right: 38%;
 }
 
-.quant{
-    margin-right: 85px;
-}
 
 .demais{
-    margin-left: 250px;
+    margin-left: 17%;
 }
+
 .produtoCarrinho{
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -596,10 +597,12 @@ figcaption{
 .infoProduto{
     display: flex;
     flex-direction: row;
+    width: 43%;
+    justify-items: center;
 }
 
 .imagemCarrinho{
-    width: 8%;
+    width: 15%;
     height: auto;
 }
 
@@ -608,6 +611,31 @@ figcaption{
 }
 
 .infoProduto p{
-    width: 28%;
+    width: 55%;
     margin-left: 6px;
+}
+
+.quantInfos{
+    width: 7%;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+}
+
+.quantInfos button{
+    width: 100%;
+    height: 45%;
+}
+
+.quantInfos p{
+    align-self: center;
+
+}
+
+.valorUni{
+    display: flex;
+    align-items: center;
+    margin-left: 17%;
+    align-content: center;
 }
