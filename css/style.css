@@ -16,6 +16,10 @@ input{
     justify-content: center;
 }
 
+hr{
+    border-color: #68B0E4;
+    margin-top: 30px;
+}
 nav{
     width: 100%;
 }
@@ -624,18 +628,73 @@ figcaption{
 }
 
 .quantInfos button{
-    width: 100%;
-    height: 45%;
+    width: 30px;
+    height: 32px;
+    font-size: larger;
 }
 
-.quantInfos p{
-    align-self: center;
-
+.quantInfos button p{
+    font-size: smaller;
+    font-size: larger;
 }
+
 
 .valorUni{
     display: flex;
     align-items: center;
     margin-left: 17%;
     align-content: center;
+}
+
+.prazoEntrega{
+    display: flex;
+    margin-top: 120px;
+}
+.calcularFrete{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.informacoesRua{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.inputCEP{
+    width: 200px;
+    height: 35px;
+    border-radius: 8px ;
+    border: solid 2px #68B0E4;
+}
+
+.inputRua{
+    width: 250px;
+    height: 35px;
+    border-radius: 8px ;
+    border: solid 2px #68B0E4;
+}
+
+.inputNumero{
+    width: 65px;
+    height: 35px;
+    border-radius: 8px ;
+    border: solid 2px #68B0E4;
+}
+
+.botao{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    border: solid 2px #68B0E4;
+    background-color: white;
+    cursor: pointer;
+}
+
+.botao:hover{
+    transform: scale(1.1);
 }
