@@ -46,7 +46,7 @@ li{
 
 }
 
- li a {
+li a {
       text-decoration: none;
       color: #306CAE;
 }
@@ -656,6 +656,7 @@ figcaption{
     flex-direction: column;
     gap: 10px;
     width: 50%;
+    height: 100;
 }
 
 
@@ -706,4 +707,116 @@ figcaption{
 
 .botao:hover{
     transform: scale(1.1);
+}
+
+
+.paginaForms{
+    background-color: #68B0E4;
+}
+
+.globalLogin{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 40%;
+    border-radius: 8px;
+    height: 650px;
+}
+
+.globalLogin h1{
+    align-self: center;
+    font-size: xx-large;
+    margin-top: 70px;
+}
+
+.formLogin{
+    margin-top: 70px ;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+}
+
+.formLogin label{
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.formLogin input{
+    width: 90%;
+    height: 12%;
+    border: solid 2px #68B0E4;
+    border-radius: 8px;
+    margin-bottom: 40px ;
+    padding: 10px;
+}
+
+.formLogin button{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.formLogin p{
+    align-self: center;
+    margin-top: 10px;
+}
+
+.formLogin p a {
+      text-decoration: none;
+      color: #306CAE;
+}
+
+.globalCadastro{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    border-radius: 8px;
+    height: 900px;
+    margin: auto;
+}
+
+.globalCadastro h1{
+    align-self: center;
+    font-size: x-large;
+    margin-top: 70px;
+}
+
+.formCadastro{
+    margin-top: 80px ;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+}
+
+.formCadastro input{
+    width: 90%;
+    height: 12%;
+    border: solid 2px #68B0E4;
+    border-radius: 8px;
+    margin-bottom: 40px ;
+    padding: 10px;
+}
+
+.botaoFormulario{
+    margin-top: 20px;
+    height: 60px;
+    width: 350px;
+    border-radius: 8px;
+    border: solid 2px #68B0E4;
+    background-color: white;
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
 }
