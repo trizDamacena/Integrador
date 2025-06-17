@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="iconesLista"><a href="index.html"><i class="bi bi-person"></i></a></li>
+            <input placeholder="PESQUISAR">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a>CONTATO</a></li>
+            <li class="iconesLista"><a href="perfil.html"><i class="bi bi-person"></i></a></li>
+            <li class="iconesLista"><a href="./carrinho.html"><i class="bi bi-cart3"></i></a></li>
+        </ul>
+    </nav>
+
+    <article class="caminhoCompra">
+        <p>CARRINHO > IDENTIFICAÇÃO > PAGAMENTO</p>
+    </article>
+    <main>
+        <section class="conteudoPagamento">
+            <article class="itensPagamento">
+                <table>
+                    <h2>RESUMO DA COMPRA</h2>
+                    <tr>
+                        <td>
+                            <figure class="imagemCarrinho">
+                                <img src="./img/capas/speaknow.png"/>
+                            </figure>
+
+                            <article class="descricaoPagamento">
+                                <p>CD Taylor Swift - Speak Now (Taylor's Version 2CD) </p>
+                                <p>Taylor Swift</p>
+                            </article>
+                            <p id="valorPag">R$168,00</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <figure class="imagemCarrinho">
+                                <img src="./img/capas/shanwMendes.png"/>
+                            </figure>
+
+                            <article class="descricaoPagamento">
+                                <p>CD Shawn Mendes - Shawn Mendes The Album</p>
+                                <p>Shawn Mendes</p>
+                            </article>
+                            <p id="valorPag">R$168,00</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <figure class="imagemCarrinho">
+                                <img src="./img/capas/fearless.png"/>
+                            </figure>
+
+                            <article class="descricaoPagamento">
+                                <p>CD Taylor Swift - Fearless (Taylor's Version)</p>
+                                <p>Taylor Swift</p>
+                            </article>
+                            <p id="valorPag">R$168,00</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <article  class="total">
+                    <p>TOTAL</p>
+                    <p>R$ 600,00</p>
+                </article>
+            </article>
+
+            <section class="formaPagamento">
+                <h2>FORMAS PAGAMENTO</h2>
+
+                <label for="select-example">Escolha uma forma de pagamento :</label>
+                <select id="select-example" name="select-example">
+                  <option value="opcao1">PIX</option>
+                  <option value="opcao2">Credito</option>
+                  <option value="opcao3">Débito</option>
+                </select>
+
+                <form class="pagamento">
+                    <label for="name">Títular do Cartão</label>
+                    <input type="text" id="name" name="titular" placeholder="Beatriz F Damacena"/>
+
+                    <label for="numero">Número do Cartão</label>
+                    <input type="text" id="numero" name="numero_cartao" placeholder="000-000-000"/>
+
+                    
+                    <div class="dadosCartao">
+                        <div>
+                            <label for="name">Data de Válidade</label>
+                            <input type="text" id="name" name="titular" placeholder="DD/MM/YYYY"/>
+                        </div>
+
+                        <div>
+                            <label for="numero">CVV</label><br/>
+                            <input type="text" id="numero" name="numero_cartao" placeholder="000"/>
+                        </div>
+                    </div>
+                </form>
+                <a href=""><button class="botao">REALIZAR PAGAMENTO</button></a>
+            </section>
+        </section>
+
+        
+
+    </main>
+</body>
+</html>

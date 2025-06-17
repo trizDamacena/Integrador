@@ -10,10 +10,11 @@
 <body>
     <nav>
         <ul>
+            <li class="iconesLista"><a href="index.html"><i class="bi bi-person"></i></a></li>
             <input placeholder="PESQUISAR">
             <li><a href="index.html">HOME</a></li>
             <li><a href="produtos.html">PRODUTOS</a></li>
-            <li><a>SOBRE</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
             <li><a>CONTATO</a></li>
             <li class="iconesLista"><a href="login.html"><i class="bi bi-person"></i></a></li>
             <li class="iconesLista"><a href="./carrinho.html"><i class="bi bi-cart3"></i></a></li>
@@ -110,21 +111,41 @@
                 </section>
             </section>
         </section>
+        <article class="infos">
+            <section class="prazoEntrega">
+                <h1>PRAZO ENTREGA</h1>
+                    <form class="calcularFrete">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep_user"placeholder="0000-000" type="text" class="inputCEP"/>
 
-        <section class="prazoEntrega">
-            <h1>PRAZO ENTREGA</h1>
-                <form class="calcularFrete">
-                    <label for="CEP">CEP</label>
-                    <input placeholder="0000-000" type="text" class="inputCEP"/>
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" name="cep_user" placeholder="Rua Carmelinda Clazzer" class="inputRua"/>
 
-                    <label>Rua</label>
-                    <input placeholder="Rua Carmelinda Clazzer" class="inputRua"/>
-                    <label>Complemento</label>
-                    <input placeholder="Apartamento 36 Torre 8" class="inputRua"/>
-                    <button class="botao">SALVAR</button>
-                </form>
-            
-        </section>
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="cep_comple"placeholder="Apartamento 36 Torre 8" class="inputRua"/>
+                        <button class="botao">SALVAR</button>
+                    </form>
+            </section>
+
+            <section class="resumoCompra">
+                <h1>RESUMO</h1>
+                <table class="resumo">
+                    <tr>
+                        <td>Valor do Produto</td>
+                        <td>R$ 382,00</td>
+                    </tr>
+                    <tr>
+                        <td>Frete</td>
+                        <td>A calcular</td>
+                    </tr>
+                    <tr>
+                        <td>Total da compra</td>
+                        <td>R$ 382,00</td>
+                    </tr>
+                </table>
+                <a href="./pagamento.html"><button class="botao">COMPRAR</button></a>
+            </section>
+        </article>
     </main>
 </body>
 </html>
