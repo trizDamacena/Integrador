@@ -85,7 +85,7 @@ img{
 }
 
 main{
-    padding: 15px;
+    padding: 5%;
 }
 
 .produtos{
@@ -741,15 +741,27 @@ figcaption{
 
 .paginaForms{
     background-color: #68B0E4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainForms{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .globalLogin{
     display: flex;
-    justify-self: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    width: 40%;
+    width: 35%;
     border-radius: 8px;
     height: 650px;
 }
@@ -772,16 +784,19 @@ figcaption{
 .formLogin label{
     font-size: larger;
     margin-bottom: 10px;
+
 }
 
 .formLogin input{
-    width: 90%;
+    width: 95%;
     height: 12%;
     border: solid 2px #68B0E4;
     background-color: #d9d9d9;
     border-radius: 8px;
     margin-bottom: 40px ;
     padding: 10px;
+    align-items: center;
+
 }
 
 .formLogin button{
@@ -804,7 +819,7 @@ figcaption{
     justify-self: center;
     flex-direction: column;
     background-color: white;
-    width: 55%;
+    width: 50%;
     border-radius: 8px;
     height: 900px;
     margin: auto;
@@ -986,6 +1001,7 @@ figcaption{
     width: 50%;
     height: 100%;
     margin: 0px;
+    object-fit: scale-down;
 }
 
 /*PERFIL*/
